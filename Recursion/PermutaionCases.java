@@ -6,6 +6,7 @@ public class PermutaionCases {
         String input = br.readLine().trim();
         String output = "";
         solve(input,output);
+        
         // System.out.println((char)(input-32));
     }
 
