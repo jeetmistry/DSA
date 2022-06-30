@@ -19,7 +19,6 @@ public class MinimumSubsetSumDifference{
 		//get the last row from subset sum
 		boolean[] subsetSum = getSubsetSum(nums,range,n);
 
-
 		//traverse subsetsum array and assign the very first index to first if true, that means the max sum possible from 0 to half range
 		int first = 0,second = 0;
 		for(int i=range/2; i>=0;i--){
@@ -28,6 +27,7 @@ public class MinimumSubsetSumDifference{
 				break;
 			}
 		}
+		
 		//assign index to second if true, that means the min sum possible from half range to full range 
 		for(int i=(range/2)+1; i<=range;i++){
 			if(subsetSum[i]){
